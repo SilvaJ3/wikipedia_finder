@@ -2,8 +2,7 @@ import wikipedia
 import sqlite3
 
 
-
-def register(entry):
+def register(entry: dict):
     conn = sqlite3.connect("database.db")
     c = conn.cursor()
     c.execute("""
